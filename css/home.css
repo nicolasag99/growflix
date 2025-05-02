@@ -1,0 +1,152 @@
+.home-links:hover {
+    color: #C0C1CA !important;
+}
+
+.home-cover {
+    background-image: url('/assets/img/growcast-01.png');
+    background-size: cover;
+    width: 100%;
+    height: 78vh
+}
+
+.cover-title {
+    font-size: 4rem;
+    color: #ffffff;
+} 
+
+.home-cover-text {
+    margin-top: 20%;
+}
+
+.caret-right-fill {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.content-link:hover {
+    color: #FF8534 !important;
+}
+
+
+.content:hover {
+    transform: scale(1.20);
+    transition: all 0.3s ease;
+    
+}
+
+
+.card-description {
+    display: none;
+}
+
+.content:hover .card-description {
+    display: block;
+    position: fixed;
+   
+  }
+
+  
+  .card-description .active {
+    display: block;
+    position: fixed;
+  }
+
+
+.video-title {
+  font-size: 0.9rem;
+}
+
+.modal-transparent {
+  border-bottom: none;
+  background-color: transparent;
+
+}
+
+.modal-dialog {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  height: 100%;
+  border: none; 
+  border-radius: 0; 
+}
+
+.my-btn-close {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+.modal-header{
+  border: none;
+}
+
+.home-navbar-drop {
+
+  position: absolute; 
+  left: 0;
+}
+
+.link-dropdown {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-dropdown:hover {
+  color: #ffffff;
+}
+
+.dropdown-custom {
+  position: absolute;
+
+}
+
+@media screen and (max-width: 991px) {
+  .home-navbar {
+    display: none;
+  } 
+
+  .cover {
+    margin-top: 300px;
+  }
+
+
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown {
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 450px) {
+  .cover-title {
+    font-size: 2rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 1900px) {
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25% !important; 
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+

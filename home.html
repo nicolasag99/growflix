@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.0/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <title>Growflix - Todos os vídeos da Growdev em um só lugar</title>
+
+</head>
+<body>
+    <section class="home-cover teste">
+        <div class=" container-fluid row">
+            <div class="col d-flex justify-content-between">
+                <div class="col col-img d-flex">
+                    <a href="./index.html"><img class="img-logo m-3" src="./assets/img/logo-growflix.svg" alt="Logo da marca 'GROWFLIX' escrito em letras maiúsculas e em negrito, com um estilo arredondado e volumétrico. A cor predominante é um vermelho vibrante e sólido."></a>
+                    <div class="home-navbar mt-3">
+                        <a href="./index.html"  class="home-links link-light text-decoration-none m-1">Inicio</a>
+                        <a href="./home.html#growcast" class="home-links link-secondary text-decoration-none m-1">Growcast[episódios]</a>
+                        <a href="./home.html#webinar" class="home-links link-secondary text-decoration-none m-1">Webinar em Flutter</a>
+                        <a href="./home.html#jornada" class="home-links link-secondary text-decoration-none m-1">Jornada UX/UI</a>
+                        <a href="./home.html#diversos" class="home-links link-secondary text-decoration-none m-1">Diversos</a>    
+                    </div>
+                </div>
+                <div class="dropdown mt-2">
+                    <div class="col-auto">
+                        <button id="menuButton" class="btn border-secondary p-0 ps-2 pe-2" type="button" id="menuButton">
+                          <i class="bi bi-list text-secondary h2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>  
+        <div class="row dropdown-custom bg-dark p-0 d-none bg-transparent" id="customDropdown">
+            <div class="row ms-1">  
+                <div class="col">   
+                    <a href="./home.html#start" class="link-light text-decoration-none ms-3">Início</a>
+                </div>
+            </div>
+            <div class="link-dropdown row mt-3 ms-1">
+                <div class="col">
+                    <a href="./home.html#growcast" class="home-links link-secondary text-decoration-none ms-3">Growcast[episódios]</a>
+                </div>
+            </div>
+            <div class="link-dropdown row mt-3 ms-1">
+                <div class="col">
+                    <a href="./home.html#webinar" class="link-secondary text-decoration-none ms-3">Webinar em Flutter</a>
+                </div>
+            </div>
+            <div class="link-dropdown row mt-3 ms-1">
+                <div class="col">
+                    <a href="./home.html#jornada" class="link-secondary text-decoration-none ms-3">Jornada UX/UI</a>
+                </div>
+            </div>
+            <div class="link-dropdown row mt-3 ms-1">
+                <div class="col">
+                    <a href="./home.html#diversos" class=" link-secondary text-decoration-none ms-3">Diversos</a>
+                </div>
+            </div>
+        </div>
+        <div class="cover row container mx-auto home-cover-text">
+            <div class="col d-fluid">
+                <p class="mx-auto fw-bold text-light small">PODCASTS</p>
+                <h1 class="cover-title h1 fw-bold">GROWCAST</h1>
+                <a href="./home.html#episodes" class="btn btn-light mx-auto fw-bold fs-6 p-1 px-3 mt-3" data-bs-toggle="modal" data-bs-target="#coverModal"><img src="./assets/img/play-fill.svg">Assistir</a>
+            </div>
+        </div>        
+
+        <div class="modal fade d-fluid video-container" id="coverModal" tabindex="-1" aria-hidden="true">
+            <div class="row">
+                <div class="col d-fluid">
+                    <div class="modal-dialog .modal-fullscreen-sm-down d-fluid">
+                        <div class="modal-content modal-transparent">
+                            <div class="modal-header my-btn-close p-4">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-0 m-0 d-fluid">
+                                <iframe width="1920" height="823" src="https://www.youtube.com/embed/7OWT3lfHYvE" title="Growcast #01 | As profissões do futuro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <div class="container text-center">
+        <div class="container text-start">
+            <div class="row mt-3 fs-5 text-light fw-bold">
+                <div class="col content-link">
+                    <a href="./home.html" class="text-decoration-none content-link fs-5 text-light fw-bold"><p>Growcast [Episódios]<i class="bi bi-play-fill"></i></p></a>   
+                </div>
+            </div>
+        </div>
+        <div id="growcast"></div>
+        
+        
+
+        <div class="container text-start">
+            <div class="row mt-3 fs-5 text-light fw-bold">
+                <div class="col content-link">
+                    <a href="./home.html" class="text-decoration-none content-link fs-5 text-light fw-bold"><p>Webinar em Flutter<i class="bi bi-play-fill"></i></p></a>   
+                </div>
+            </div>
+        </div>
+        <div id="webinar"></div>
+
+        <div class="container text-start">
+            <div class="row mt-3 fs-5 text-light fw-bold">
+                <div class="col content-link">
+                    <a href="./home.html" class="text-decoration-none content-link fs-5 text-light fw-bold"><p>Jornada UX/UI<i class="bi bi-play-fill"></i></p></a>   
+                </div>
+            </div>
+        </div>
+        <div id="jornada"></div>
+
+        <div class="container text-start">
+            <div class="row mt-3 fs-5 text-light fw-bold">
+                <div class="col content-link">
+                    <a href="./home.html" class="text-decoration-none content-link fs-5 text-light fw-bold"><p>Diversos<i class="bi bi-play-fill"></i></p></a>   
+                </div>
+            </div>
+        </div>
+        <div id="diversos"></div>
+
+
+        
+    </div>
+
+    <hr class="border border-secondary border-1 opacity-100">
+
+    <section class="container">
+        <div class="row mt-5">
+            <div class="col link-secondary">
+                <p>Dúvidas? Ligue 0800 591 8942</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 col-sm-3">
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Perguntas frequentes</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Relações com investidores</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Formas de assistir</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Informações corporativas</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Só na Growflix</a>
+            </div>
+            <div class="col-6 col-sm-3">
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Central de Ajuda</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Carreiras</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Termos de Uso</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Entre em contato</a>
+            </div>
+            <div class="col-6 col-sm-3">
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Conta</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Resgatar cartão pré-pago</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Privacidade</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Teste de velocidde</a>
+            </div>
+            <div class="col-6 col-sm-3">
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Media Center</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Comprar cartão pré-pago</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Preferẽncia de coockies</a>
+                <a href="#" class="d-block small mt-3 link-secondary link-underline-opacity-0">Avisos legais</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col link-secondary">
+                <p class="mt-5">Growflix Growdev</p>
+            </div>
+        </div>
+            
+    </section>
+
+
+
+    <script src="./assets/libs/bootstrap-5.3.0/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+
+    
+</body>
+</html>
