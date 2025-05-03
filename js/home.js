@@ -157,22 +157,22 @@ const movies = [
 
 // Code to dynamically create the video cards
 
-const categorias = {
+const categoryVideo = {
     "Growcast [Episódios]": document.getElementById('growcast'),
     "Webinar em Flutter": document.getElementById('webinar'),
     "Jornada UX/UI": document.getElementById('jornada'),
     "Diversos": document.getElementById('diversos')
   };
   
-  for (let key in categorias) {
-    if (categorias[key]) {
-      categorias[key].innerHTML = '<div class="row container align-items-center"></div>';
+  for (let key in categoryVideo) {
+    if (categoryVideo[key]) {
+      categoryVideo[key].innerHTML = '<div class="row container align-items-center"></div>';
     }
   }
   
 
   movies.forEach((movie, index) => {
-    const container = categorias[movie.category];
+    const container = categoryVideo[movie.category];
   
     if (container) {
       const row = container.querySelector('.row');
