@@ -37,11 +37,6 @@ body {
     color: #ffffff;
 }
 
-.minha-tabela{
-    background-color: black;
-}
-
-
 .accordion-button::after {
     content: '';
     display: inline-block;
